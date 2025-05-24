@@ -1,10 +1,10 @@
-import usePlatforms, { platforms } from "@/hooks/usePlatforms";
+import usePlatforms, { Platforms } from "@/hooks/usePlatforms";
 import { Menu, Button, Portal } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
 
 interface Props {
-  setSelectedPlatform: (platform: platforms) => void;
-  selectedPlatform: platforms | null;
+  setSelectedPlatform: (platform: Platforms) => void;
+  selectedPlatform: Platforms | null;
 }
 
 const PlatformSelector = ({ setSelectedPlatform, selectedPlatform }: Props) => {
