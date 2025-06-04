@@ -22,7 +22,7 @@ const PlatformSelector = ({ setSelectedPlatform, selectedPlatform }: Props) => {
       <Portal>
         <Menu.Positioner>
           <Menu.Content>
-            {data.map((platform) => (
+            {data?.results.map((platform) => (
               <Menu.Item
                 onClick={() => setSelectedPlatform(platform)}
                 value={platform.id.toString()}
