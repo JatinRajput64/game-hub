@@ -12,6 +12,11 @@ import { BsGlobe } from "react-icons/bs";
 import { Platforms } from "@/hooks/usePlatforms";
 import { HStack, Icon } from "@chakra-ui/react";
 import { IconType } from "react-icons";
+import { SiAtari } from "react-icons/si";
+import { LiaCheckDoubleSolid } from "react-icons/lia";
+import { SiSega } from "react-icons/si";
+import { SiD3Dotjs } from "react-icons/si";
+import { LiaNeos } from "react-icons/lia";
 
 interface Props {
   platforms: Platforms[];
@@ -28,6 +33,11 @@ const PlatformIconsList = ({ platforms }: Props) => {
     android: FaAndroid,
     ios: MdPhoneIphone,
     web: BsGlobe,
+    atari: SiAtari,
+    "commodore-amiga": LiaCheckDoubleSolid,
+    sega: SiSega,
+    "3do": SiD3Dotjs,
+    "neo-geo": LiaNeos,
   };
 
   return (
