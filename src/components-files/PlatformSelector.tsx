@@ -1,3 +1,4 @@
+import usePlatform from "@/hooks/usePlatform";
 import usePlatforms, { Platforms } from "@/hooks/usePlatforms";
 import { Menu, Button, Portal } from "@chakra-ui/react";
 import { BsChevronDown } from "react-icons/bs";
@@ -15,15 +16,13 @@ const PlatformSelector = ({
 
   if (error) return null;
 
-  const platformName = data.results.find(
-    (p) => p.id === selectedPlatformId
-  )?.name;
+  const selectedPlatform = usePlatform(selectedPlatformId);
 
   return (
     <Menu.Root>
       <Menu.Trigger asChild>
         <Button variant="outline" size="sm" borderRadius={10}>
-          {platformName || "Platform"} <BsChevronDown />
+          {selectedPlatform?.name || "Platform"} <BsChevronDown />
         </Button>
       </Menu.Trigger>
       <Portal>
