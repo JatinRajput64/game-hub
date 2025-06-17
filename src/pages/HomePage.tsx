@@ -17,11 +17,7 @@ const HomePage = () => {
         lg: "200px 1fr",
       }}
     >
-      <GridItem
-        area="aside"
-        display={{ base: "none", lg: "block" }}
-        paddingX={5}
-      >
+      <GridItem area="aside" display={{ base: "none", lg: "block" }}>
         <GenreList />
       </GridItem>
       <GridItem area="main">
