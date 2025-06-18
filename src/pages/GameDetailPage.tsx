@@ -1,9 +1,7 @@
-import CricticScore from "@/components-files/CricticScore";
 import ExpandableText from "@/components-files/ExpandableText";
 import GameAttributes from "@/components-files/GameAttributes";
-import GameDefinitionItem from "@/components-files/GameDefinitionItem";
 import useGame from "@/hooks/useGame";
-import { Heading, SimpleGrid, Spinner, Text } from "@chakra-ui/react";
+import { Heading, Spinner } from "@chakra-ui/react";
 import { useParams } from "react-router-dom";
 
 const GameDetailPage = () => {
