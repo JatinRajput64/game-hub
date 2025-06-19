@@ -18,6 +18,7 @@ const GameTrailers = ({ slug }: Props) => {
       controls
       src={trailers?.results[0].data[480]}
       poster={trailers?.results[0].preview}
+      width="100%"
     />
   ) : null;
 };
